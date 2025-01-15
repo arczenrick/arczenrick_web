@@ -48,7 +48,11 @@ const ContactScreen = () => {
           <br />
           <br />
           <form>
-            <Row>
+            <Row
+              style={{
+                width: "100%",
+              }}
+            >
               <Col xs={12} md={6}>
                 <div className={styles.field}>
                   <p className={fonts.font1}>Name</p>
