@@ -1,0 +1,12 @@
+.ThumbnailsSection {
+  
+  .card {
+    padding: 10px;
+    filter: grayscale(1);
+    transition-duration: 0.7s;
+    margin-bottom: 100px;
+    &:hover{
+        filter: grayscale(0);
+    }
+  }
+}

@@ -1,9 +1,13 @@
 .ServicesSection {
+  .cap {
+    max-width: 700px;
+    color: $color_g3;
+  }
   .cont {
     padding-bottom: 50px;
 
     .wrap {
-        margin-top: 50px;
+      margin-top: 50px;
       .service {
         background-color: $color_g1;
         padding: 50px 20px;
@@ -33,13 +37,13 @@
           }
         }
 
-        &:hover{
-            background-color: $color_p1;
-            .scRight{
-                *{
-                    color: black;
-                }
+        &:hover {
+          background-color: $color_p1;
+          .scRight {
+            * {
+              color: black;
             }
+          }
         }
       }
     }

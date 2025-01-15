@@ -6,17 +6,19 @@ import AboutSection from "./sections/about/about";
 import ServicesSection from "./sections/services/services";
 import GetInTouchSection from "./sections/get_in_touch/get_in_touch";
 import TestimonialsSection from "./sections/testimonials/testimonials";
+import ClientsSection from "./sections/clients/clients";
+import ThumbnailsSection from "./sections/thumbnails/thumbnails";
 
 const HomeScreen = () => {
   return (
     <main className={styles.home}>
-      {/* <CustomContainer> */}
       <BannerSection />
       <AboutSection />
       <ServicesSection />
+      <ThumbnailsSection />
+      {/* <ClientsSection/> */}
       <GetInTouchSection />
       <TestimonialsSection />
-      {/* </CustomContainer> */}
     </main>
   );
 };

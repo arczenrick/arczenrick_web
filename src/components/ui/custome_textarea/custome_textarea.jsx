@@ -3,7 +3,7 @@ import styles from "./custome_textarea.module.scss";
 
 const CustomTextArea = ({
   variant = 1,
-  rows = 3,
+  rows = 4,
   placeholder,
   value,
   onChange = () => {},

@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./services.module.scss";
 import CustomContainer from "@/components/ui/custom_container/custom_container";
 import SectionHeading from "@/components/ui/section_heading/section_heading";
-import {  List } from "react-bootstrap-icons";
+import { List } from "react-bootstrap-icons";
 import { Col, Row } from "react-bootstrap";
 import fonts from "@/styles/fonts";
 import Link from "next/link";
@@ -10,37 +10,40 @@ import Link from "next/link";
 const ServicesSection = () => {
   const SERVICES = [
     {
-      title: "Website Design",
+      title: "Website Development & Design",
       icon: <List />,
-      desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, quas.consectetur adipisicing elit. Dolor, quas.",
+      desc: "Creating visually stunning, user-friendly websites tailored to your needs.",
     },
     {
-      title: "Website Design",
+      title: "Digital Marketing",
       icon: <List />,
-      desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, quas.consectetur adipisicing elit. Dolor, quas.",
+      desc: "Boosting online presence with SEO, social media, and ROI-driven strategies.",
     },
     {
-      title: "Website Design",
+      title: "Strategy Development",
       icon: <List />,
-      desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, quas.consectetur adipisicing elit. Dolor, quas.",
+      desc: "Crafting forward-thinking strategies to achieve your business goals.",
     },
     {
-      title: "Website Design",
+      title: "Digital Transformation",
       icon: <List />,
-      desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, quas.consectetur adipisicing elit. Dolor, quas.",
+      desc: "Enhancing efficiency and scalability with cutting-edge technologies.",
     },
     {
-      title: "Website Design",
+      title: "Technology Management",
       icon: <List />,
-      desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, quas.consectetur adipisicing elit. Dolor, quas.",
+      desc: "Ensuring your IT infrastructure supports growth and success.",
     },
     {
-      title: "Website Design",
+      title: "Operations Optimization",
       icon: <List />,
-      desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, quas.consectetur adipisicing elit. Dolor, quas.",
+      desc: "Streamlining processes to improve productivity and reduce costs.",
     },
-  
-   
+    {
+      title: "Supply Chain Solutions",
+      icon: <List />,
+      desc: "Optimizing logistics for timely deliveries and cost efficiency.",
+    },
   ];
 
   return (
@@ -54,6 +57,14 @@ const ServicesSection = () => {
               subHead={"CAPABILITIES"}
             />
           </div>
+          <br />
+
+          <p className={styles.cap}>
+            At arczenrick, we deliver innovative IT solutions that empower
+            businesses to excel in the digital era. As a full-service technology
+            and consulting firm, we transform ideas into impactful digital
+            experiences and operational excellence.
+          </p>
 
           <div className={styles.wrap}>
             <Row>

@@ -43,7 +43,7 @@ const AboutSection = () => {
       component: (
         <div>
           <p>
-            comTo be a trailblazer in the IT industry, empowering businesses
+            To be a trailblazer in the IT industry, empowering businesses
             with innovative,reliable, and impactful digital solutions that drive
             growth, fostertransformation, and create lasting value in a
             technology-driven world.
@@ -63,17 +63,20 @@ const AboutSection = () => {
       component: (
         <div>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi,
-            debitis!
+            Arczenrick is a professional services company that provides a wide
+            range of services and solutions in strategy, consulting, digital,
+            technology, and operations. The company helps organizations to
+            improve their performance and create sustainable value for their
+            stakeholders. Some examples of the specific services and solutions
+            that Arczenrick provides include:
           </p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi,
-            debitis!
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi,
-            debitis!
-          </p>
+          <ul>
+            <li><p>Strategy development and implementation</p></li>
+            <li><p>Digital transformation and optimization</p></li>
+            <li><p>Technology implementation and management</p></li>
+            <li><p>Operations improvement and optimization</p></li>
+            <li><p>Supply chain and logistics optimization</p></li>
+          </ul>
         </div>
       ),
     },

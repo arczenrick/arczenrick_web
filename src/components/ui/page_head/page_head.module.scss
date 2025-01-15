@@ -1,0 +1,15 @@
+.PageHead {
+  @include flexCenter;
+  flex-direction: column;
+  height: 300px;
+  border-bottom: 1px solid $color_g4;
+
+  h1{
+    margin-bottom: 10px;
+    font-size: 50px;
+  }
+
+  span{
+    color: $color_g3;
+  }
+}

@@ -1,0 +1,64 @@
+.ContactScreen {
+  .cont {
+    padding: 100px 0;
+
+    .contact {
+      border-top: 1px solid $color_g4;
+      .row {
+        border-bottom: 1px solid $color_g4;
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+
+        p {
+          font-size: 20px;
+          color: $color_g2;
+          a {
+            color: $color_g2;
+            margin-right: 10px;
+            &:hover {
+              color: $color_p1;
+            }
+          }
+        }
+      }
+    }
+
+    form {
+      .field {
+        margin-bottom: 50px;
+        p {
+          margin-bottom: 18px;
+          font-size: 24px;
+          margin-left: 10px;
+        }
+      }
+
+      .btn {
+        text-align: center;
+        button {
+          font-size: 24px;
+          padding: 10px 50px;
+          border-radius: 50px;
+        }
+      }
+    }
+  }
+
+  @include respond-below(md) {
+    .cont {
+      .contact {
+        .row {
+          flex-direction: column;
+          gap: 20px;
+
+          p {
+            a {
+              display: block;
+            }
+          }
+        }
+      }
+    }
+  }
+}

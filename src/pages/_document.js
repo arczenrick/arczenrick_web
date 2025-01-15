@@ -1,9 +1,8 @@
-import EVENT_DETAILS from "@/constants/event_details";
 import { Html, Head, Main, NextScript } from "next/document";
 
 export default function Document() {
 
-  const title = 'doc'
+  const title = 'Arczenrick'
 
   return (
     <Html lang="en">
