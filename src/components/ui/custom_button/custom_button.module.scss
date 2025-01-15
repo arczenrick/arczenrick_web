@@ -1,0 +1,45 @@
+.customButton {
+  padding: 8px 20px;
+  outline: none;
+  border-radius: 20px;
+  font-size: 18px;
+  height: fit-content !important;
+  width: fit-content;
+  font-size: 15px;
+  border: 1px solid;
+
+  &.v1 {
+    background-color: $color_p1;
+    color: white;
+    border-color: transparent;
+    // box-shadow: 2px 2px 0 0 $color_o4;
+
+    &:hover {
+      color: $color_p1;
+      background-color: white;
+      border-color: $color_p1;
+    }
+
+    &:active {
+      box-shadow: none;
+      transform: translate(0px, 0px);
+    }
+  }
+
+  // &.v2 {
+  //   background-color: white;
+  //   color: $color_g4;
+  //   border: 1px solid $color_g4;
+
+  //   &:hover {
+  //     // background-color: $color_g3;
+  //     box-shadow: 3px 3px 0 0 $color_g3;
+  //     transform: translate(-1px, -1px);
+  //   }
+
+  //   &:active{
+  //     box-shadow: none;
+  //     transform: translate(0px, 0px);
+  //   }
+  // }
+}

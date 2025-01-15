@@ -1,0 +1,41 @@
+.c {
+  background-color: $color_mb;
+  border: 1px solid $color_g4 !important;
+  max-width: 300px !important;
+}
+
+.head {
+  button {
+    background-color: $color_p2;
+  }
+}
+
+.body {
+  display: flex;
+  gap: 50px;
+  flex-direction: column;
+  padding: 10px;
+
+  height: 100%;
+  h1 {
+    color: white;
+  }
+  nav {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    width: 100%;
+    a {
+      width: 100%;
+      border-bottom: 1px solid $color_g1;
+      padding: 10px 0;
+      font-size: 15px;
+      color: white;
+      font-weight: 600;
+      &:hover,
+      &.active {
+        color: $color_p1;
+      }
+    }
+  }
+}

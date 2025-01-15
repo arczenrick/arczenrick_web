@@ -1,0 +1,13 @@
+.ScrollButton {
+  background-color: $color_p1;
+  color: black;
+  position: fixed;
+  width: 45px;
+  height: 45px;
+  bottom: 24px;
+  right: 24px;
+  @include flexCenter;
+  z-index: 100;
+  border-radius: 10px;
+  //   cursor: none;
+}

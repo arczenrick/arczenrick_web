@@ -1,0 +1,74 @@
+.header {
+  border-bottom: 1px solid $color_g4;
+
+  .wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px 0;
+
+    .logo,
+    .cta {
+      width: 120px;
+    }
+
+    nav {
+      height: 25px;
+
+      ul {
+        list-style: none;
+        display: flex;
+        gap: 70px;
+        padding: 0;
+
+        li {
+          a {
+            font-size: 17px;
+            font-weight: 400;
+          }
+
+          &:hover,
+          &.active {
+            a {
+              color: $color_p1;
+            }
+          }
+        }
+      }
+    }
+
+    .menu {
+      display: none;
+      background-color: $color_p1;
+      height: 50px;
+      width: 50px;
+      border-radius: 50%;
+      svg {
+        height: 28px;
+        width: 28px;
+        cursor: pointer;
+        * {
+          color: $color_mb;
+        }
+      }
+    }
+  }
+
+  &.scrolled {
+  }
+
+  @include respond-below(md) {
+    .wrap {
+      padding: 20px 0;
+      nav,
+      .cta {
+        display: none;
+      }
+
+      .menu {
+        display: unset;
+        @include flexCenter;
+      }
+    }
+  }
+}

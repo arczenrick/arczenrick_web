@@ -1,0 +1,66 @@
+.GetInTouchSection {
+  background-image: url("/assets/images/project_bg.jpg");
+  background-size: cover;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; /* Adjust height as needed */
+    background: linear-gradient(to top, black, rgba(0, 0, 0, 0));
+    pointer-events: none; /* Ensures it doesn't interfere with user interaction */
+  }
+  .wrap {
+    position: relative;
+    z-index: 100;
+    height: 100dvh;
+    @include flexCenter;
+    flex-direction: column;
+    h1 {
+      font-size: 100px;
+      text-align: center;
+      margin-bottom: 50px;
+
+      span {
+        color: $color_p1;
+      }
+    }
+
+    .cta {
+      background-color: white;
+      padding: 25px 35px;
+      font-weight: 600;
+      color: black !important;
+
+      svg {
+        * {
+          color: black !important;
+        }
+        margin: 0 0 4px 20px;
+        font-size: 24px;
+      }
+
+      &:hover {
+        svg {
+          transform: translate(10px, 0px);
+        }
+      }
+    }
+  }
+
+  @include respond-below(md) {
+    background-position: center;
+    .wrap {
+      h1 {
+        font-size: 50px;
+      }
+    }
+
+    .cta {
+      padding: 20px 20px !important;
+    }
+  }
+}

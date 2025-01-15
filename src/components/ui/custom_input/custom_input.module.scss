@@ -1,0 +1,11 @@
+.CustomInput{
+    padding: 10px 20px;
+    border: none;
+    border-bottom: 1px solid grey;
+    outline: none;
+
+    &:focus, &:focus-visible{
+        border-color: $color_g3;
+    }
+    
+}

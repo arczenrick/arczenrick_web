@@ -1,0 +1,106 @@
+.AboutSection {
+  .wrap {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding-bottom: 50px;
+
+    .left {
+      padding-right: 40px;
+      .tabs {
+        display: flex;
+        gap: 50px;
+        margin-bottom: 50px;
+
+        > div {
+          opacity: 0.5;
+          font-size: 20px;
+          cursor: pointer;
+
+          &:hover {
+            opacity: 0.75;
+          }
+
+          &.active {
+            opacity: 1;
+          }
+        }
+      }
+
+      .cont {
+        height: 400px;
+        * {
+          color: $color_g3;
+        }
+        p {
+          margin-bottom: 20px;
+          font-size: 17px;
+        }
+      }
+    }
+
+    .right {
+      padding-left: 20px;
+
+      .img {
+        position: relative;
+
+        > div {
+          position: absolute;
+          background-color: $color_p1;
+          width: fit-content;
+          bottom: 0;
+          left: 0;
+          text-align: center;
+          width: 140px;
+          height: 140px;
+          @include flexCenter;
+          flex-direction: column;
+          h3 {
+            font-size: 50px;
+          }
+
+          p {
+            font-size: 14px;
+          }
+          * {
+            color: black;
+          }
+        }
+      }
+    }
+  }
+
+  @include respond-below(md) {
+    .wrap {
+      grid-template-columns: 100%;
+      .left {
+        padding: 0;
+        .tabs {
+          gap: 20px;
+        }
+
+        .cont {
+          height: fit-content !important;
+        }
+      }
+
+      .right {
+        padding: 0;
+
+        .img {
+          > div {
+            height: 100px;
+            width: 100px;
+            h3 {
+              font-size: 40px;
+            }
+
+            p {
+              font-size: 13px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

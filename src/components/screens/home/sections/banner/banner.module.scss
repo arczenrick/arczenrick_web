@@ -1,0 +1,135 @@
+.BannerSection {
+  position: relative;
+
+  .circle {
+    position: absolute;
+    background: radial-gradient((circle, $color_p1) 0%, rgba(255, 0, 0, 0) 70%);
+    // background-color: red;
+    right: 0;
+    bottom: 100px;
+    height: 800px;
+    width: 700px;
+  }
+
+  .cont {
+    position: relative;
+    padding: 100px 0;
+    z-index: 10;
+
+    .top {
+      display: flex;
+      justify-content: space-between;
+
+      .rCircles {
+        display: flex;
+        .rCircle {
+          border-radius: 50%;
+          width: 85px;
+          height: 85px;
+          border: 3px solid transparent;
+          transform: translate(0, 70px);
+          position: relative;
+          z-index: 100;
+
+          &.rCircleBorder {
+            border-color: white;
+            margin-right: -30px;
+          }
+          &.rCircleFill {
+            border-color: $color_p1;
+            background-color: $color_p1;
+          }
+        }
+      }
+    }
+
+    h1 {
+      font-size: 100px;
+
+      span {
+        color: $color_p1;
+      }
+    }
+
+    .img {
+      position: relative;
+
+      h1 {
+        position: absolute;
+        left: 0;
+        top: 0;
+      }
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 50%; /* Adjust height as needed */
+        background: linear-gradient(
+          to bottom,
+          rgb(0, 0, 0),
+          rgba(255, 255, 255, 0)
+        );
+        pointer-events: none; /* Ensures it doesn't interfere with user interaction */
+      }
+    }
+
+    .bottom {
+      display: grid;
+      grid-template-columns: 50% 50%;
+      padding-top: 100px;
+    }
+  }
+
+  @include respond-below(xl) {
+    .cont {
+      h1 {
+        font-size: 70px;
+      }
+    }
+  }
+  @include respond-below(lg) {
+    .cont {
+      h1 {
+        font-size: 50px;
+      }
+    }
+  }
+  @include respond-below(md) {
+    .circle {
+      display: none;
+    }
+
+    .cont {
+      padding: 50px 0;
+      h1 {
+        font-size: 40px;
+      }
+      .top {
+        flex-direction: column-reverse;
+        .rCircles {
+          .rCircle {
+            transform: translate(0);
+            width: 40px;
+            height: 40px;
+
+            &.rCircleBorder {
+              margin-right: -20px;
+            }
+          }
+        }
+      }
+      .img {
+        &::before {
+          height: 100%; /* Adjust height as needed */
+        }
+      }
+
+      .bottom {
+        grid-template-columns: 100%;
+      }
+    }
+  }
+}

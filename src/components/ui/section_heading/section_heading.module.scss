@@ -1,0 +1,39 @@
+.sectionHead {
+  h2 {
+    font-size: 60px;
+    span {
+      color: $color_g3;
+    }
+  }
+
+  &.centered{
+    text-align: center;
+
+    p{
+      justify-content: center;
+    }
+  }
+
+  .SmallHeading {
+    p {
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      span {
+        color: $color_p1;
+        font-size: 38px;
+      }
+    }
+  }
+
+  @include respond-below(md) {
+    h2 {
+      font-size: 40px;
+    }
+
+    p {
+      font-size: 15px;
+    }
+  }
+}

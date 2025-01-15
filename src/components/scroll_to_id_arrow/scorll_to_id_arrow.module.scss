@@ -1,0 +1,39 @@
+.arrow {
+  position: absolute;
+  color: white;
+  bottom: 15px;
+  text-align: center;
+  z-index: 11;
+  left: 50%;
+  transform: translate(-50%, 0);
+  p {
+    font-size: 25px;
+    font-weight: 300;
+  }
+
+  a {
+    color: white !important;
+    svg {
+      font-size: 45px;
+      animation: down 2s infinite;
+      cursor: pointer;
+    }
+  }
+}
+
+@keyframes down {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  80% {
+    transform: translate(0, 0);
+  }
+  90% {
+    transform: translate(0, 10px);
+  }
+
+  100% {
+    transform: translate(0, 0);
+  }
+}

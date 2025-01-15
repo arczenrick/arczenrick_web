@@ -1,0 +1,7 @@
+.CustomContainer {
+  border-left: 1px solid $color_g4;
+  border-right: 1px solid $color_g4;
+  // @include respond-below(md) {
+  //   margin: 0 5px;
+  // }
+}

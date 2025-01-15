@@ -1,0 +1,38 @@
+@import "~bootstrap/dist/css/bootstrap.min.css";
+
+body {
+  width: 100dvw;
+  overflow-x: hidden;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: 0.2s;
+  scroll-behavior: smooth !important;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  margin: 0;
+  padding: 0;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a {
+  margin: 0;
+  padding: 0;
+}
+
+.react-multi-carousel-dot button {
+  height: 9px !important;
+  width: 9px !important;
+  background-color: rgba(255, 255, 255, 0.7);
+}

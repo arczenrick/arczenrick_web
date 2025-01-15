@@ -1,0 +1,47 @@
+.ServicesSection {
+  .cont {
+    padding-bottom: 50px;
+
+    .wrap {
+        margin-top: 50px;
+      .service {
+        background-color: $color_g1;
+        padding: 50px 20px;
+        transition-duration: 0.5s;
+
+        display: grid;
+        grid-template-columns: 80px calc(100% - 80px);
+        align-items: center;
+        margin-bottom: 30px;
+
+        .scLeft {
+          background-color: white;
+          width: 75px;
+          height: 75px;
+          border-radius: 50%;
+          @include flexCenter;
+          * {
+            color: black;
+          }
+        }
+
+        .scRight {
+          padding-left: 20px;
+          p {
+            color: $color_g3;
+            margin-top: 10px;
+          }
+        }
+
+        &:hover{
+            background-color: $color_p1;
+            .scRight{
+                *{
+                    color: black;
+                }
+            }
+        }
+      }
+    }
+  }
+}
