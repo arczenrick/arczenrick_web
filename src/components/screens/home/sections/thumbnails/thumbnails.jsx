@@ -40,7 +40,7 @@ const ThumbnailsSection = () => {
 
   return (
     <section className={styles.ThumbnailsSection}>
-      <CustomContainer>
+      <CustomContainer noPadding>
         <div className={styles.cont}>
           <SectionHeading
             smallHead={"Core Services"}
@@ -48,6 +48,10 @@ const ThumbnailsSection = () => {
             subHead={"CAPABILITIES"}
             center
           />
+        </div>
+
+      </CustomContainer>
+
           <br/>
           <Carousel
             additionalTransfrom={0}
@@ -62,8 +66,7 @@ const ThumbnailsSection = () => {
             infinite
             itemClass=""
             keyBoardControl
-            minimumTouchDrag={80}
-            pauseOnHover
+            minimumTouchDrag={80}            
             renderArrowsWhenDisabled={false}
             renderButtonGroupOutside={false}
             renderDotsOutside={false}
@@ -117,8 +120,6 @@ const ThumbnailsSection = () => {
               );
             })}
           </Carousel>
-        </div>
-      </CustomContainer>
     </section>
   );
 };

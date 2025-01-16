@@ -1,0 +1,100 @@
+.ClientsSection {
+  position: relative;
+  .wrap {
+    min-height: 700px;
+  }
+
+  .Banner {
+    position: absolute;
+    top: 60%;
+    left: 0;
+    z-index: 1000;
+    height: fit-content;
+    width: 100dvw;
+
+    .inner {
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+      height: 130px;
+
+      .wrapper {
+        position: absolute;
+        display: flex;
+
+        section {
+          display: flex;
+          align-items: center;
+          animation: swipe var(--speed) linear infinite backwards;
+
+          img {
+            // max-width: 150px;
+            // padding: 0 15px;
+            height: 130px;
+            margin: 0 50px;
+            transform: scale(1.3);
+            // object-fit: cover;
+            &:last-of-type {
+              padding-left: 0;
+            }
+          }
+        }
+      }
+    }
+
+    background-color: $color_p1;
+    transform: rotate(-5deg) scale(1.1);
+
+    &.back {
+      background-color: $color_g1;
+      transform: rotate(5deg) scale(1.1);
+
+      .inner {
+        .wrapper {
+          section {
+            animation: swipeLeft var(--speed) linear infinite backwards;
+          }
+        }
+      }
+    }
+
+    @include respond-below(md) {
+      position: unset;
+      transform-origin: right;
+    }
+  }
+
+  @include respond-below(md) {
+    .wrap {
+      min-height: fit-content;
+      padding-bottom: 40px;
+    }
+
+    .Banner {
+      transform: none !important;
+    }
+
+    .x {
+      padding-bottom: 100px;
+    }
+  }
+}
+
+@keyframes swipe {
+  0% {
+    transform: translate(-100%);
+  }
+
+  100% {
+    transform: translate(0%);
+  }
+}
+@keyframes swipeLeft {
+  0% {
+    transform: translate(0%);
+  }
+
+  100% {
+    transform: translate(-100%);
+  }
+}

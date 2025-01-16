@@ -13,14 +13,16 @@ import CustomButton from "@/components/ui/custom_button/custom_button";
 const ContactScreen = () => {
   return (
     <div className={styles.ContactScreen}>
-      <PageHead head="Contact" />
+      <PageHead head="Get In Touch With Arczenrick" page="Contact" />
       <CustomContainer noPadding>
         <div className={styles.cont}>
-          <SectionHeading
-            mainHead="WE CREATE DIGITAL"
-            subHead="SOLUTIONS"
-            smallHead="CONTACT"
-          />
+          <div className={styles.head}>
+            <SectionHeading
+              mainHead="WE CREATE DIGITAL"
+              subHead="SOLUTIONS"
+              smallHead="CONTACT"
+            />
+          </div>
           <br />
           <br />
           <br />

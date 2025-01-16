@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const ScrollButton = () => {
   return (
-    <Link href={"/"} className={styles.ScrollButton}>
+    <Link href={"#"} className={styles.ScrollButton}>
       <ArrowUp />
     </Link>
   );

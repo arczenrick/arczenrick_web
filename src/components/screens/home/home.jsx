@@ -15,8 +15,8 @@ const HomeScreen = () => {
       <BannerSection />
       <AboutSection />
       <ServicesSection />
+      <ClientsSection/>
       <ThumbnailsSection />
-      {/* <ClientsSection/> */}
       <GetInTouchSection />
       <TestimonialsSection />
     </main>

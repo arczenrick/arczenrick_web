@@ -1,0 +1,64 @@
+.AboutScreen {
+    max-width: 100dvw;
+    overflow: hidden;
+  .cont {
+    padding-bottom: 100px;
+
+    .img {
+      position: relative;
+      > div {
+        position: absolute;
+        height: 200px;
+        width: 200px;
+        bottom: 0;
+        left: 0;
+        background-color: $color_p1;
+        color: white;
+        text-align: center;
+        @include flexCenter;
+        flex-direction: column;
+
+        h3 {
+          font-size: 70px;
+        }
+
+        p {
+          font-size: 20px;
+          font-weight: bold;
+        }
+      }
+    }
+
+    .services {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      > div {
+        border-radius: 50%;
+        padding: 20px;
+        background-color: white;
+        width: fit-content;
+      }
+    }
+  }
+
+  @include respond-below(md) {
+    .cont {
+      .img {
+        > div {
+          height: 120px;
+          width: 120px;
+
+          h3 {
+            font-size: 40px;
+          }
+
+          p {
+            font-size: 15px;
+            font-weight: normal;
+          }
+        }
+      }
+    }
+  }
+}

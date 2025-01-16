@@ -29,16 +29,16 @@ const Header = () => {
       href: "/",
     },
     {
-      title: "Services",
+      title: "Core Services",
       href: "/services",
     },
     {
-      title: "About",
-      href: "/services",
+      title: "Who We Are?",
+      href: "/about",
     },
     
     {
-      title: "Contact",
+      title: "Get In Touch",
       href: "/contact",
     },
   ];

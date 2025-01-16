@@ -1,7 +1,10 @@
 const { Container } = require("react-bootstrap");
 import styles from "./custom_container.module.scss";
 
-const CustomContainer = ({ children, noPadding, ...props }) => {
+const CustomContainer = ({ children, noPadding, noCont, ...props }) => {
+  if (noCont) {
+    return <>{children}</>;
+  }
   return (
     <Container
       style={{

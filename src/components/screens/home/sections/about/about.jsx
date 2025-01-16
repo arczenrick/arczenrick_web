@@ -3,7 +3,7 @@ import styles from "./about.module.scss";
 import CustomContainer from "@/components/ui/custom_container/custom_container";
 import { Image } from "react-bootstrap";
 import fonts from "@/styles/fonts";
-const AboutSection = () => {
+const AboutSection = ({noCont}) => {
   const tabs = [
     {
       title: "Our Mission",
@@ -88,7 +88,7 @@ const AboutSection = () => {
 
   return (
     <section className={styles.AboutSection}>
-      <CustomContainer>
+      <CustomContainer noCont={noCont}>
         <div className={styles.wrap}>
           <div className={styles.left}>
             <div className={styles.tabs}>
