@@ -56,7 +56,10 @@ const TestimonialsSection = () => {
             {testimonials1.map((test, idx) => {
               return (
                 <Col key={test.id} xs={12} lg={idx % 2 ? 7 : 5}>
-                  <div className={styles.testimonial}>
+                  <div
+                    className={styles.testimonial}
+                    data-aos={idx % 2 ? "fade-left" : "fade-right"}
+                  >
                     <div className={styles.top}>
                       <div className={styles.info}>
                         <Image
@@ -86,10 +89,13 @@ const TestimonialsSection = () => {
             })}
           </Row>
           <Row>
-            {testimonials1.map((test, idx) => {
+            {testimonials2.map((test, idx) => {
               return (
                 <Col key={test.id} xs={12} lg={idx % 2 ? 5 : 7}>
-                  <div className={styles.testimonial}>
+                  <div
+                    className={styles.testimonial}
+                    data-aos={idx % 2 ? "fade-left" : "fade-right"}
+                  >
                     <div className={styles.top}>
                       <div className={styles.info}>
                         <Image

@@ -29,13 +29,14 @@ const Header = () => {
       href: "/",
     },
     {
-      title: "Core Services",
-      href: "/services",
-    },
-    {
-      title: "Who We Are?",
+      title: "Who We Are",
       href: "/about",
     },
+    {
+      title: "What We Do",
+      href: "/services",
+    },
+   
     
     {
       title: "Get In Touch",
@@ -58,7 +59,7 @@ const Header = () => {
       <CustomContainer>
         <div className={styles.wrap}>
           <div className={styles.logo}>
-            <h2>LOGO</h2>
+            <Image src="/logo/logo_main.png" alt="logo" width={150}/>
           </div>
           <nav>
             <ul>

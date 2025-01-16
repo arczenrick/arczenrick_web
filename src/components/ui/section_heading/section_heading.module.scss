@@ -1,11 +1,16 @@
 .sectionHead {
+  
   h2 {
     font-size: 60px;
+    text-transform: uppercase;
+    display: inline;
     span {
       color: $color_g3;
     }
   }
-
+  .mainHead {
+    display: flex;
+  }
   .cap {
     max-width: 700px;
     color: $color_g3;
@@ -13,6 +18,10 @@
 
   &.centered {
     text-align: center;
+
+    .mainHead{
+      justify-content: center;
+    }
 
     p {
       justify-content: center;

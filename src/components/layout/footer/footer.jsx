@@ -4,7 +4,7 @@ import CustomContainer from "@/components/ui/custom_container/custom_container";
 import { Col, Image, Row } from "react-bootstrap";
 import PAGES from "@/constants/pages";
 import Link from "next/link";
-import { Dot, EnvelopeAt, Phone } from "react-bootstrap-icons";
+import { ArrowRight, Dot, EnvelopeAt, Phone } from "react-bootstrap-icons";
 import SocialMedia from "@/components/social_media/social_media";
 import fonts from "@/styles/fonts";
 
@@ -14,7 +14,15 @@ const Footer = () => {
       <CustomContainer>
         <div className={styles.cont}>
           <div className={styles.wrap}>
-            <div className={styles.left}>logo</div>
+            <div className={styles.left}>
+              <Link href="/contact">
+                <div className={styles.ping}>
+                  <div className={styles.ov}></div>
+                  <ArrowRight />
+                  <p>Ping Us</p>
+                </div>
+              </Link>
+            </div>
 
             <div className={styles.right}>
               <Row>

@@ -90,7 +90,7 @@ const AboutSection = ({noCont}) => {
     <section className={styles.AboutSection}>
       <CustomContainer noCont={noCont}>
         <div className={styles.wrap}>
-          <div className={styles.left}>
+          <div className={styles.left} data-aos='fade-right'>
             <div className={styles.tabs}>
               {tabs.map((t, i) => (
                 <div
@@ -106,7 +106,7 @@ const AboutSection = ({noCont}) => {
             </div>
             <div className={styles.cont}>{currentTab.component}</div>
           </div>
-          <div className={styles.right}>
+          <div className={styles.right} data-aos='fade-left'>
             <div className={styles.img}>
               <Image src="/assets/images/about_img.jpg" alt="about_img" fluid />
               <div>

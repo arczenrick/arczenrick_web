@@ -7,8 +7,8 @@ const PageHead = ({ head = "", page='' }) => {
   return (
     <CustomContainer noPadding>
       <div className={styles.PageHead}>
-        <h1 className={fonts.font1}>{head.toUpperCase()}</h1>
-        <p>
+        <h1 className={fonts.font1} data-aos='fade-down'>{head.toUpperCase()}</h1>
+        <p data-aos='fade-up'>
           ARCZENRICK <span>/ {page.toUpperCase() || head.toUpperCase()}</span>
         </p>
       </div>

@@ -23,6 +23,54 @@
     border-bottom: 1px solid $color_g4;
     display: grid;
     grid-template-columns: 50% 50%;
+
+    .left {
+      .ping {
+        width: 300px;
+        height: 300px;
+        background-color: $color_p1_light;
+        @include flexCenter;
+        flex-direction: column;
+        border-radius: 50%;
+        margin: auto;
+        // opacity: 0.5;
+        p {
+          font-size: 40px;
+          z-index: 100;
+        }
+
+        svg {
+          transform: rotate(-45deg);
+          font-size: 50px;
+        }
+
+        position: relative;
+
+        .ov {
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          background-color: $color_p1;
+          border-radius: 50%;
+          transform-origin: center;
+          transform: scale(0);
+          // z-index: 100;
+        }
+
+        &:hover {
+          transform: scale(1.1);
+          .ov {
+            transform: scale(1);
+          }
+        }
+      }
+
+      @include respond-below(md){
+        margin-bottom: 50px;
+      }
+    }
     .right {
       .box {
         margin-bottom: 40px;

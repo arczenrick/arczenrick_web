@@ -5,36 +5,36 @@
   height: 100dvh;
   width: 100dvw;
   @include flexCenter;
-  animation: fade 2s linear 1;
+  animation: fade 2s linear forwards;
   animation-delay: 1s;
 
   svg {
-    color: $color_p2;
+    color: $color_p1;
     font-size: 40px;
     animation: heartbeat 1s infinite;
   }
 }
 
-@keyframes heartbeat {
-  0%,
-  100% {
-    transform: scale(1);
-  }
-  25% {
-    transform: scale(1.1);
-  }
-  50% {
-    transform: scale(0.95);
-  }
-  75% {
-    transform: scale(1.1);
-  }
-}
-@keyframes fade {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
+// @keyframes heartbeat {
+//   0%,
+//   100% {
+//     transform: scale(1);
+//   }
+//   25% {
+//     transform: scale(1.1);
+//   }
+//   50% {
+//     transform: scale(0.95);
+//   }
+//   75% {
+//     transform: scale(1.1);
+//   }
+// }
+// @keyframes fade {
+//   0% {
+//     opacity: 1;
+//   }
+//   100% {
+//     opacity: 0;
+//   }
+// }

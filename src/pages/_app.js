@@ -11,17 +11,47 @@ import fonts from "@/styles/fonts";
 import Layout from "@/components/layout/layout";
 import LoadingScreen from "@/components/ui/loading_screen/loading_screen";
 
+// components/LenisScroll.js
+import Lenis from "@studio-freight/lenis";
+
+const LenisScroll = () => {
+  useEffect(() => {
+    const lenis = new Lenis({
+      duration: 1.5,
+      easing: (t) => t,
+      smooth: true,
+      lerp: 0.1, // Lower lerp for smoother interpolation
+    });
+
+    const raf = (time) => {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    };
+
+    requestAnimationFrame(raf);
+
+    return () => {
+      lenis.destroy();
+    };
+  }, []);
+
+  return null;
+};
+
 export default function App({ Component }) {
   const [isLoading, setIsLoading] = useState(true);
+
   useEffect(() => {
     Aos.init({
       duration: 1000,
       once: false,
     });
+  }, []);
 
+  useEffect(() => {
     setTimeout(() => {
       setIsLoading(false);
-    }, 1900);
+    }, 1000);
   }, []);
 
   useEffect(() => {
@@ -40,8 +70,9 @@ export default function App({ Component }) {
   return (
     <>
       {isLoading && <LoadingScreen />}
-      <main className={`${styles.main} ${fonts.MainFont}`}>
+      <main className={`${styles.main} ${fonts.MainFont}`} id="lenis-container">
         <Layout>
+          <LenisScroll />
           <Component />
         </Layout>
       </main>

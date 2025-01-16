@@ -65,12 +65,13 @@ const ServicesSection = ({ noHead }) => {
 
             <div className={styles.wrap}>
               <Row>
-                {SERVICES.map((s) => {
+                {SERVICES.map((s, i) => {
                   return (
                     <Col key={s.title} xs={12} lg={6}>
                       <Link
                         href={`/services/${s.id}`}
                         className={styles.service}
+                        data-aos={i % 2 ? "fade-left" : "fade-right"}
                       >
                         <div className={styles.scLeft}>
                           <Image
@@ -100,10 +101,14 @@ const ServicesSection = ({ noHead }) => {
       <div className={styles.cont}>
         <div className={styles.wrap}>
           <Row>
-            {SERVICES.map((s) => {
+            {SERVICES.map((s, i) => {
               return (
                 <Col key={s.title} xs={12} lg={6}>
-                  <Link href={`/services/${s.id}`} className={styles.service}>
+                  <Link
+                    href={`/services/${s.id}`}
+                    className={styles.service}
+                    data-aos={i % 2 ? "fade-left" : "fade-right"}
+                  >
                     <div className={styles.scLeft}>
                       <Image
                         src={`/assets/icons/${s.id}.png`}
