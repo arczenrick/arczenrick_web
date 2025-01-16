@@ -72,7 +72,7 @@ export default function App({ Component }) {
       {isLoading && <LoadingScreen />}
       <main className={`${styles.main} ${fonts.MainFont}`} id="lenis-container">
         <Layout>
-          <LenisScroll />
+         
           <Component />
         </Layout>
       </main>
