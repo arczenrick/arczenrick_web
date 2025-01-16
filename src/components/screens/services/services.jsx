@@ -7,7 +7,7 @@ const ServicesScreen = () => {
   return (
     <div
       style={{
-        maxWidth: "100dvh",
+        maxWidth: "100dvw",
         overflow: "hidden",
       }}
     >
