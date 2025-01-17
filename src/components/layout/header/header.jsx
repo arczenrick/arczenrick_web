@@ -59,7 +59,7 @@ const Header = () => {
       <CustomContainer>
         <div className={styles.wrap}>
           <div className={styles.logo}>
-            <Image src="/logo/logo_main.png" alt="logo" width={150}/>
+            <Image src="/logo/logo_main.png" alt="logo" width={200}/>
           </div>
           <nav>
             <ul>
