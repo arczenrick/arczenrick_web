@@ -10,44 +10,6 @@ import ClientsSection from "../home/sections/clients/clients";
 import AboutSection from "../home/sections/about/about";
 
 const AboutScreen = () => {
-  const SERVICES = [
-    {
-      title: "Website Development & Design",
-      id: "website_development",
-      desc: "Creating visually stunning, user-friendly websites tailored to your needs.",
-    },
-    {
-      title: "Digital Marketing",
-      id: "digital_marketing",
-      desc: "Boosting online presence with SEO, social media, and ROI-driven strategies.",
-    },
-    {
-      title: "Strategy Development",
-      id: "strategy_development",
-      desc: "Crafting forward-thinking strategies to achieve your business goals.",
-    },
-    {
-      title: "Digital Transformation",
-      id: "digital_transformation",
-      desc: "Enhancing efficiency and scalability with cutting-edge technologies.",
-    },
-    {
-      title: "Technology Management",
-      id: "technology_management",
-      desc: "Ensuring your IT infrastructure supports growth and success.",
-    },
-    {
-      title: "Operations Optimization",
-      id: "operations_optimization",
-      desc: "Streamlining processes to improve productivity and reduce costs.",
-    },
-    {
-      title: "Supply Chain Solutions",
-      id: "supply_chain",
-      desc: "Optimizing logistics for timely deliveries and cost efficiency.",
-    },
-  ];
-
   return (
     <div className={styles.AboutScreen}>
       <PageHead head="Who We Are?" page="About" />
@@ -71,35 +33,33 @@ const AboutScreen = () => {
               </p>
             </div>
           </div>
-         
-         
         </div>
-        
-        <br />
-        <AboutSection noCont />
-        <div>
-            <Row
-              style={{
-                width: "99%",
-              }}
-            >
-              <Col xs={12} lg={5}>
-                <Image src="/assets/images/abt2.jpg" alt="abt2" fluid />
-              </Col>
 
-              <Col xs={12} lg={7}>
-                <div className={styles.aRight}>
-                  <SectionHeading
-                    smallHead="Why Us?"
-                    mainHead="Discover Our"
-                    subHead={"Capabilities"}
-                    caption="From crafting stunning websites to revolutionizing your digital presence, we’re here to turn your challenges into opportunities. Our expertise spans Website Development & Design, Digital Marketing, Strategy Development, Digital Transformation, Technology Management, Operations Optimization, and Supply Chain Solutions—delivering tailored strategies that propel your business to the forefront of the digital age."
-                  />
-                  <br />
-                </div>
-              </Col>
-            </Row>
-          </div>
+        <br />
+        <AboutSection noCont isAbtPage/>
+        <div>
+          <Row
+            style={{
+              width: "99%",
+            }}
+          >
+            <Col xs={12} lg={5}>
+              <Image src="/assets/images/abt2.jpg" alt="abt2" fluid />
+            </Col>
+
+            <Col xs={12} lg={7}>
+              <div className={styles.aRight}>
+                <SectionHeading
+                  smallHead="Why Us?"
+                  mainHead="Discover Our"
+                  subHead={"Capabilities"}
+                  caption="From crafting stunning websites to revolutionizing your digital presence, we’re here to turn your challenges into opportunities. Our expertise spans Website Development & Design, Digital Marketing, Strategy Development, Digital Transformation, Technology Management, Operations Optimization, and Supply Chain Solutions—delivering tailored strategies that propel your business to the forefront of the digital age."
+                />
+                <br />
+              </div>
+            </Col>
+          </Row>
+        </div>
         <ServicesSection noHead />
 
         <br />

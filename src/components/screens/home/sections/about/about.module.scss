@@ -9,7 +9,7 @@
       .tabs {
         display: flex;
         gap: 50px;
-        margin-bottom: 50px;
+        margin-bottom: 30px;
 
         > div {
           opacity: 0.5;
@@ -33,7 +33,7 @@
         }
         p {
           margin-bottom: 20px;
-          font-size: 17px;
+          // font-size: 17px;
         }
       }
     }

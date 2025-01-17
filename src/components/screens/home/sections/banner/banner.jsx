@@ -12,7 +12,7 @@ const BannerSection = () => {
 
   const bHead = "AGENCY";
 
-  const initialDelay = 100;
+  const initialDelay = 500;
 
   return (
     <section className={styles.BannerSection}>
@@ -83,7 +83,9 @@ const BannerSection = () => {
           </div>
 
           <div className={styles.bottom}>
-            <div className={styles.left}></div>
+            <div className={styles.left}>
+              <Image src="/logo/logo_1-min.png" alt="logo" fluid/>
+            </div>
             <SectionHeading
               smallHead={"ABOUT ARCZENRICK"}
               mainHead={"CRAFTING DIGITAL"}

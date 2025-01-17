@@ -1,5 +1,4 @@
 .ServicesSection {
-
   .cont {
     padding-bottom: 50px;
 
@@ -9,6 +8,17 @@
         background-color: $color_g1;
         padding: 50px 20px;
         transition-duration: 0.5s;
+        position: relative;
+        .bg {
+          position: absolute;
+          right: 0;
+          z-index: -1;
+          height: 100%;
+          opacity: 0;
+          img {
+            height: 100%;
+          }
+        }
 
         display: grid;
         grid-template-columns: 80px calc(100% - 80px);
@@ -33,6 +43,12 @@
 
         &:hover {
           background-color: $color_p1;
+
+          .bg {
+            opacity: 0.1;
+            right: 30px;
+            transform: scale(1.2);
+          }
           .scRight {
             * {
               color: black;

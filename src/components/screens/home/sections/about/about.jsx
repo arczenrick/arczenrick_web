@@ -3,7 +3,7 @@ import styles from "./about.module.scss";
 import CustomContainer from "@/components/ui/custom_container/custom_container";
 import { Image } from "react-bootstrap";
 import fonts from "@/styles/fonts";
-const AboutSection = ({noCont}) => {
+const AboutSection = ({ noCont, isAbtPage }) => {
   const tabs = [
     {
       title: "Our Mission",
@@ -43,8 +43,8 @@ const AboutSection = ({noCont}) => {
       component: (
         <div>
           <p>
-            To be a trailblazer in the IT industry, empowering businesses
-            with innovative,reliable, and impactful digital solutions that drive
+            To be a trailblazer in the IT industry, empowering businesses with
+            innovative,reliable, and impactful digital solutions that drive
             growth, fostertransformation, and create lasting value in a
             technology-driven world.
           </p>
@@ -71,11 +71,21 @@ const AboutSection = ({noCont}) => {
             that Arczenrick provides include:
           </p>
           <ul>
-            <li><p>Strategy development and implementation</p></li>
-            <li><p>Digital transformation and optimization</p></li>
-            <li><p>Technology implementation and management</p></li>
-            <li><p>Operations improvement and optimization</p></li>
-            <li><p>Supply chain and logistics optimization</p></li>
+            <li>
+              <p>Strategy development and implementation</p>
+            </li>
+            <li>
+              <p>Digital transformation and optimization</p>
+            </li>
+            <li>
+              <p>Technology implementation and management</p>
+            </li>
+            <li>
+              <p>Operations improvement and optimization</p>
+            </li>
+            <li>
+              <p>Supply chain and logistics optimization</p>
+            </li>
           </ul>
         </div>
       ),
@@ -90,7 +100,7 @@ const AboutSection = ({noCont}) => {
     <section className={styles.AboutSection}>
       <CustomContainer noCont={noCont}>
         <div className={styles.wrap}>
-          <div className={styles.left} data-aos='fade-right'>
+          <div className={styles.left} data-aos="fade-right">
             <div className={styles.tabs}>
               {tabs.map((t, i) => (
                 <div
@@ -106,17 +116,28 @@ const AboutSection = ({noCont}) => {
             </div>
             <div className={styles.cont}>{currentTab.component}</div>
           </div>
-          <div className={styles.right} data-aos='fade-left'>
+          <div className={styles.right} data-aos="fade-left">
             <div className={styles.img}>
-              <Image src="/assets/images/about_img.jpg" alt="about_img" fluid />
-              <div>
-                <h3 className={fonts.font1}>10</h3>
-                <p>
-                  Years of
-                  <br />
-                  Experience
-                </p>
-              </div>
+              <Image
+                src={
+                  isAbtPage
+                    ? "/logo/logo.png"
+                    : "/assets/images/about_img.jpg"
+                }
+                alt="about_img"
+                fluid
+                
+              />
+              {!isAbtPage && (
+                <div>
+                  <h3 className={fonts.font1}>10</h3>
+                  <p>
+                    Years of
+                    <br />
+                    Experience
+                  </p>
+                </div>
+              )}
             </div>
           </div>
         </div>

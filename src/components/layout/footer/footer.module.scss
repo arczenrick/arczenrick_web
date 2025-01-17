@@ -67,7 +67,7 @@
         }
       }
 
-      @include respond-below(md){
+      @include respond-below(md) {
         margin-bottom: 50px;
       }
     }
@@ -94,6 +94,12 @@
           p {
             font-size: 20px;
             margin-right: 10px;
+          }
+
+          a {
+            &:hover {
+              text-decoration: underline;
+            }
           }
         }
       }

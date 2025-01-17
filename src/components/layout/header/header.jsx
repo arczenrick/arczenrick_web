@@ -72,7 +72,7 @@ const Header = () => {
                   <li
                     key={page.title}
                     className={
-                      router.pathname === page.href ? styles.active : ""
+                      `/${router?.pathname?.split('/')[1]}` === page.href ? styles.active : ""
                     }
                   >
                     <Link href={page.href}>{page.title.toUpperCase()}</Link>

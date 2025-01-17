@@ -39,19 +39,11 @@ const LenisScroll = () => {
 };
 
 export default function App({ Component }) {
-  const [isLoading, setIsLoading] = useState(true);
-
   useEffect(() => {
     Aos.init({
       duration: 1000,
       once: false,
     });
-  }, []);
-
-  useEffect(() => {
-    setTimeout(() => {
-      setIsLoading(false);
-    }, 1000);
   }, []);
 
   useEffect(() => {
@@ -69,10 +61,9 @@ export default function App({ Component }) {
 
   return (
     <>
-      {isLoading && <LoadingScreen />}
+      <LoadingScreen />
       <main className={`${styles.main} ${fonts.MainFont}`} id="lenis-container">
         <Layout>
-         
           <Component />
         </Layout>
       </main>

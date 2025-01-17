@@ -84,6 +84,7 @@ const ServicesSection = ({ noHead }) => {
                           <h3 className={fonts.font1}>{s.title}</h3>
                           <p>{s.desc}</p>
                         </div>
+                        <div className={styles.bg} ><Image src="/logo/logo.png" alt="logo.png" fluid/></div>
                       </Link>
                     </Col>
                   );

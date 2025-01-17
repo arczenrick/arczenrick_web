@@ -5,38 +5,10 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { Image } from "react-bootstrap";
 import SectionHeading from "@/components/ui/section_heading/section_heading";
+import SERVICES from "@/constants/services";
 
 const ThumbnailsSection = () => {
-  const cards = [
-    {
-      id: "adfa",
-      img: "website.png",
-    },
-    {
-      id: "sfbsr",
-      img: "technology.png",
-    },
-    {
-      id: "erg",
-      img: "digital_tranformation.png",
-    },
-    {
-      id: "vvczx",
-      img: "strategy_development.png",
-    },
-    {
-      id: "sdmskmg",
-      img: "digital_marketing.png",
-    },
-    {
-      id: "pppadcv",
-      img: "logistic.png",
-    },
-    {
-      id: "advmakd",
-      img: "operation_improvement.png",
-    },
-  ];
+  const cards = SERVICES;
 
   return (
     <section className={styles.ThumbnailsSection}>

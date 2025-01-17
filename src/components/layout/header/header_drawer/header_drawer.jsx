@@ -35,7 +35,7 @@ const HeaderDrawer = ({ show, setShow, router, PAGES }) => {
                   onClick={() => {
                     setShow(false);
                   }}
-                  className={router.pathname === page.href ? styles.active : ""}
+                  className={`/${router?.pathname?.split('/')[1]}` === page.href ? styles.active : ""}
                 >
                   {page.title}
                 </Link>

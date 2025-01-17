@@ -82,6 +82,14 @@
     }
 
     .bottom {
+      .left {
+        position: relative;
+        img {
+          position: absolute;
+          // background-color: red;
+          bottom: 40px;
+        }
+      }
       display: grid;
       grid-template-columns: 50% 50%;
       padding-top: 100px;
@@ -133,6 +141,13 @@
       }
 
       .bottom {
+        .left {
+          img {
+            width: 200px;
+            bottom: 0;
+            
+          }
+        }
         grid-template-columns: 100%;
       }
     }
