@@ -42,6 +42,10 @@ const Header = () => {
       title: "Get In Touch",
       href: "/contact",
     },
+    {
+      title: "Careers",
+      href: "/career",
+    },
   ];
 
   return (
@@ -71,14 +75,14 @@ const Header = () => {
                       router.pathname === page.href ? styles.active : ""
                     }
                   >
-                    <Link href={page.href}>{page.title}</Link>
+                    <Link href={page.href}>{page.title.toUpperCase()}</Link>
                   </li>
                 );
               })}
             </ul>
           </nav>
           <div className={styles.cta}>
-            <CustomButton>Join with us</CustomButton>
+            {/* <CustomButton>Join with us</CustomButton> */}
           </div>
 
           <div

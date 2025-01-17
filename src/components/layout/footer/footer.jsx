@@ -7,6 +7,7 @@ import Link from "next/link";
 import { ArrowRight, Dot, EnvelopeAt, Phone } from "react-bootstrap-icons";
 import SocialMedia from "@/components/social_media/social_media";
 import fonts from "@/styles/fonts";
+import CONTACT_DETAILS from "@/constants/contact";
 
 const Footer = () => {
   return (
@@ -28,7 +29,7 @@ const Footer = () => {
               <Row>
                 <Col xs={12} md={6}>
                   <div className={styles.box}>
-                    <h4 className={fonts.font1}>Social Media</h4>
+                    <h4 className={fonts.font1}>SOCIAL MEDIA</h4>
                     <div className={styles.social}>
                       <Link href="/">INSTAGRAM...</Link>
                       <Link href="/">YOUTUBE...</Link>
@@ -42,30 +43,28 @@ const Footer = () => {
                 </Col>
                 <Col xs={12} md={6}>
                   <div className={styles.box}>
-                    <h4 className={fonts.font1}>Social Media</h4>
+                    <h4 className={fonts.font1}>ADDRESS</h4>
                     <div className={styles.social}>
-                      <p>Address Line 1,</p>
-                      <p>Address Line 2,</p>
-                      <p>Address Line 2,</p>
+                      {CONTACT_DETAILS.address.map((l, idx) => (
+                        <p key={`cl_${idx}`}>{l}</p>
+                      ))}
                     </div>
                   </div>
                 </Col>
                 <Col xs={12} md={6}>
                   <div className={styles.box}>
-                    <h4 className={fonts.font1}>Social Media</h4>
+                    <h4 className={fonts.font1}>QUICK LINKS</h4>
                     <Link href="/">Home</Link>
-                    <Link href="/">Services</Link>
-                    <Link href="/">About Us</Link>
-                    <Link href="/">Contact</Link>
+                    <Link href="/services">What we do</Link>
+                    <Link href="/about">Who we are</Link>
+                    <Link href="/contact">Get in touch</Link>
                   </div>
                 </Col>
                 <Col xs={12} md={6}>
                   <div className={styles.box}>
-                    <h4 className={fonts.font1}>Social Media</h4>
-                    <Link href="/">Career</Link>
-                    <Link href="/">Team</Link>
-                    <Link href="/">Services</Link>
-                    <Link href="/">Portfolio</Link>
+                    <h4 className={fonts.font1}>MORE INFO</h4>
+                    <Link href="/career">Career</Link>
+                    <Link href="/terms_and_conditions">Terms & Conditions</Link>
                   </div>
                 </Col>
               </Row>

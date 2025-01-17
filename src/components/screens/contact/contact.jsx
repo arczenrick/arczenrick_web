@@ -9,6 +9,7 @@ import CustomInput from "@/components/ui/custom_input/custom_input";
 import { Col, Row } from "react-bootstrap";
 import CustomTextArea from "@/components/ui/custome_textarea/custome_textarea";
 import CustomButton from "@/components/ui/custom_button/custom_button";
+import CONTACT_DETAILS from "@/constants/contact";
 
 const ContactScreen = () => {
   return (
@@ -29,11 +30,13 @@ const ContactScreen = () => {
           <div className={styles.contact}>
             <div className={styles.row}>
               <h3 className={fonts.font1}>LOCATION</h3>
-              <p>LANDABARRI BIDEA, L, OFICINA 205 - 48940 LEIOA, BIZKAIA</p>
+              <p>
+                {CONTACT_DETAILS.address.map(a=><>{a}&nbsp;</>)}
+              </p>
             </div>
             <div className={styles.row}>
               <h3 className={fonts.font1}>CONTACT</h3>
-              <p>ovix@example.com , +1 800 123 456 789</p>
+              <p>{CONTACT_DETAILS.email} , {CONTACT_DETAILS.phone}</p>
             </div>
             <div className={styles.row}>
               <h3 className={fonts.font1}>SOCIAL</h3>
