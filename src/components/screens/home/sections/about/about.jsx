@@ -17,13 +17,13 @@ const AboutSection = ({ noCont, isAbtPage }) => {
           <ul>
             <li>
               <p>
-                comDriving Innovation: Crafting cutting-edge technologies and
+                Driving Innovation: Crafting cutting-edge technologies and
                 strategies that transform ideas into impactful digital
                 realities.
               </p>
               <p>
                 Empowering Growth: Equipping businesses with tools and solutions
-                that enhanceperformance, scalability, and success.
+                that enhance performance, scalability, and success.
               </p>
               <p>Creating Value & Fostering Collaboration</p>
             </li>
@@ -31,7 +31,7 @@ const AboutSection = ({ noCont, isAbtPage }) => {
           <p>
             <small>
               With a passion for technology and a focus on results, we aim to be
-              the catalyst for our clients’digital transformation and long-term
+              the catalyst for our clients&apos;digital transformation and long-term
               success.
             </small>
           </p>
@@ -114,7 +114,7 @@ const AboutSection = ({ noCont, isAbtPage }) => {
                 </div>
               ))}
             </div>
-            <div className={styles.cont}>{currentTab.component}</div>
+            <div className={`${styles.cont} ${fonts.font1}`}>{currentTab.component}</div>
           </div>
           <div className={styles.right} data-aos="fade-left">
             <div className={styles.img}>
@@ -130,9 +130,9 @@ const AboutSection = ({ noCont, isAbtPage }) => {
               />
               {!isAbtPage && (
                 <div>
-                  <h3 className={fonts.font1}>10</h3>
+                  <h3 className={fonts.font1}>1</h3>
                   <p>
-                    Years of
+                    Year
                     <br />
                     Experience
                   </p>

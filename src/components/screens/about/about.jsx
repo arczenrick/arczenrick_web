@@ -26,9 +26,9 @@ const AboutScreen = () => {
           <div className={styles.img}>
             <Image src="/assets/images/abt.jpg" fluid alt="abt" />
             <div>
-              <h3 className={fonts.font1}>10</h3>
+              <h3 className={fonts.font1}>1</h3>
               <p>
-                Years of <br />
+                Year of <br />
                 Experience
               </p>
             </div>

@@ -6,11 +6,11 @@ import { Image } from "react-bootstrap";
 import SectionHeading from "@/components/ui/section_heading/section_heading";
 
 const BannerSection = () => {
-  const topHead = "PASSIONATE WEB";
+  const topHead = "TECHNOLOGY AND";
 
-  const spanHead = "DESIGN";
+  const spanHead = "CONSULTANCY";
 
-  const bHead = "AGENCY";
+  const bHead = "SERVICES";
 
   const initialDelay = 500;
 
@@ -88,8 +88,8 @@ const BannerSection = () => {
             </div>
             <SectionHeading
               smallHead={"ABOUT ARCZENRICK"}
-              mainHead={"CRAFTING DIGITAL"}
-              subHead={"EXCELLENCE"}
+              mainHead={"// Our real art is".toUpperCase()}
+              subHead={"precision".toUpperCase()}
             />
           </div>
         </div>

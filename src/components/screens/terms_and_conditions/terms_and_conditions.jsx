@@ -19,7 +19,7 @@ const TermsScreen = () => {
         <br />
         <div>
           <p>
-            Welcome to Azenrick! By accessing or using our services, you agree
+            Welcome to Arczenrick! By accessing or using our services, you agree
             to comply with the following terms and conditions. Please read them
             carefully before proceeding.
           </p>
@@ -38,7 +38,7 @@ const TermsScreen = () => {
             <li>
               <strong>Services Provided</strong>
               <p>
-                Azenrick provides IT-related services, including but not limited
+                Arczenrick provides IT-related services, including but not limited
                 to:
               </p>
               <ul>
@@ -62,8 +62,8 @@ const TermsScreen = () => {
               <br />
               <p>
                 All content, designs, code, and intellectual property created by
-                Azenrick during the course of our projects remain the property
-                of Azenrick until full payment is received. Upon completion and
+                Arczenrick during the course of our projects remain the property
+                of Arczenrick until full payment is received. Upon completion and
                 payment, ownership rights will be transferred as per the
                 agreement.
               </p>
@@ -108,7 +108,7 @@ const TermsScreen = () => {
               <strong>Confidentiality</strong>
               <br />
               <p>
-                Azenrick and its clients agree to protect the confidentiality of
+                Arczenrick and its clients agree to protect the confidentiality of
                 any proprietary information shared during the project. This
                 includes, but is not limited to, business strategies, technical
                 information, and user data.
@@ -119,7 +119,7 @@ const TermsScreen = () => {
               <strong>Revisions and Modifications</strong>
               <br />
               <p>
-                Azenrick offers a limited number of revisions as agreed in the
+                Arczenrick offers a limited number of revisions as agreed in the
                 project contract.
                 <br />
                 Additional revisions or changes beyond the agreed scope may
@@ -131,7 +131,7 @@ const TermsScreen = () => {
               <strong>Liability and Disclaimer</strong>
               <br />
               <p>
-                Azenrick is not responsible for any damages or losses arising
+                Arczenrick is not responsible for any damages or losses arising
                 from the use of our services, including but not limited to,
                 technical errors, downtime, or unauthorized access to systems.
                 While we strive for excellence, we cannot guarantee specific
@@ -156,7 +156,7 @@ const TermsScreen = () => {
               <br />
               <p>
                 Our projects may involve the integration of third-party tools or
-                services. Azenrick is not responsible for the performance or
+                services. Arczenrick is not responsible for the performance or
                 terms of these third-party providers.
               </p>
               <br />
@@ -174,7 +174,7 @@ const TermsScreen = () => {
               <strong>Changes to Terms</strong>
               <br />
               <p>
-                Azenrick reserves the right to update or modify these Terms and
+                Arczenrick reserves the right to update or modify these Terms and
                 Conditions at any time without prior notice. Updates will be
                 posted on our website, and continued use of our services
                 constitutes acceptance of the revised terms.
@@ -189,7 +189,7 @@ const TermsScreen = () => {
                 please contact us at:
               </p>
               <br />
-              <p>Azenrick IT Solutions</p>
+              <p>Arczenrick IT Solutions</p>
               <ul>
                 <li>Email: {CONTACT_DETAILS.email}</li>
                 <li>Phone: {CONTACT_DETAILS.phone}</li>
